@@ -1,0 +1,10 @@
+.doctor-img{
+  transition: transform 0.5s;
+  border-radius: 1rem;
+}
+
+.doctor-img:hover{
+  transform: scale(1.15);
+  border: 2px solid red;
+  cursor: pointer;
+}
