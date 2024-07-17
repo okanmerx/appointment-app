@@ -10,7 +10,7 @@ const deleteAppointment  =async (app)=>{
 
   newAppointments = newAppointments.filter(item=> item.id !== app.id)
   setAppointments(newAppointments)
-    // send Email 
+    
     try{
       const result = await emailjs.send('service_6gwzsti', 'template_omp3hfj', app, 'CyXn8viS9CuAWupHJ')
       console.log(result)

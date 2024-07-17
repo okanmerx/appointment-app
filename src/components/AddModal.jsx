@@ -31,7 +31,7 @@ export default function AddModal({
     }
 
     setAppointments([newAppointment, ...appointments])
-    // send Email 
+    
     try{
       const result = await emailjs.sendForm('service_6gwzsti', 'template_cvbb7mw', form.current, 'CyXn8viS9CuAWupHJ')
       console.log(result)
